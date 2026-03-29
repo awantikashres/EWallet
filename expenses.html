@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenses Page</title>
+    <link rel="stylesheet" href="style0.css">
+</head>
+<body>
+    <div class="container">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="Icons used/Icons used/wallet.png" alt="Wallet Icon" class="icon"> EWallet
+            </div>
+
+            <nav class="menu">
+                <a href="#"><img src="Icons used/Icons used/dashboard.png" alt="Dashboard Icon" class="icon"> Dashboard</a>
+                <a href="#"><img src="Icons used/Icons used/expenses.png" alt="Expenses Icon" class="icon"> Expenses</a>
+                <a href="#"><img src="Icons used/Icons used/solar_wallet-linear.png" alt="My Wallet Icon" class="icon"> My Wallet</a>
+                <a href="#"><img src="Icons used/Icons used/budget icon.png" alt="Budget Icon" class="icon"> Budget</a>
+            </nav>
+
+            <div class="settings">
+                <img src="Icons used/Icons used/setting.png" alt="Settings Icon" class="icon"> Setting
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Top Bar -->
+            <div class="topbar">
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                    <button><img src="Icons used/Icons used/search.png" alt="Search Icon" class="icon"></button>
+                </div>
+                <div class="user-icons">
+
+                    <div class="noti">
+                         <img src="Icons used/Icons used/notificationbell.png" alt="Notification Icon" class="icon">
+                    </div>
+
+                    <div class="user-icon">
+                        <img src="Icons used/Icons used/userprofile.png" alt="User Icon" class="icon">
+                    </div>
+
+                    <div>
+                        <span class="username">Username<br>email@xyz.com</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expenses Header -->
+            <h1>Expenses</h1>
+            <div class="expense-controls">
+                <button class="add-expense">+ Add Expenses</button>
+
+                <div class="time-filters">
+                    <button>Daily</button>
+                    <button class="active">Weekly</button>
+                    <button>Monthly</button>
+                </div>
+            </div>
+
+
+
+            <div class="content-row">
+            <!-- Saving Progress -->
+                <div class="saving-progress">
+                    <h2>Saving Progress <span>50%</span></h2>
+                <div class="graph-placeholder">Graph</div>
+                </div>
+
+            <!-- Recent Transactions -->
+                <div class="recent-transactions">
+                    <h3>Recent Transactions</h3>
+                    <div class="transaction">
+                    <div class="circle"></div>
+                    <span>Grocery Store</span>
+                    <span>NRP XXX</span>
+                </div>
+                <div class="transaction"><div class="circle"></div></div>
+                <div class="transaction"><div class="circle"></div></div>
+                <div class="transaction"><div class="circle"></div></div>
+                </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-bar">
+                <div class="progress-fill" style="width:50%"></div>
+                <span>Saving Progress 50%</span>
+            </div>
+
+        </main>
+    </div>
+
+<script src="script1.js"></script>
+
+</body>
+</html>

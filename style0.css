@@ -1,0 +1,295 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #e5e5e5;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 240px;
+    background-color: #dcdcdc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+.menu a:hover {
+    background-color: #c5c5c5;
+}
+
+.settings {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Icons */
+.icon {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0);
+}
+
+
+
+.menu a img[src*="solar_wallet-linear"]{
+    width: 24px;
+    height: 24px;
+    /*filter: none;*/
+}
+
+
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+
+
+.content-row{
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+
+
+/* Topbar */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dcdcdc;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+/* Search */
+.search {
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.search input {
+    border: none;
+    outline: none;
+}
+
+.search button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Right icons section */
+.user-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Circle backgrounds (IMPORTANT PART) */
+.noti, .user-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #eef1ee;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Username */
+.username {
+    font-size: 12px;
+}
+
+/* Title */
+h1 {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Controls */
+.expense-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.time-filters{
+    margin-left: auto;
+    background-color: #dcdcdc;
+    padding: 10px;
+    border-radius: 10px;
+    width: 500px;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+
+
+.add-expense {
+    background-color: #5d755d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.time-filters button {
+    border: none;
+    padding: 8px 15px;
+    margin-left: 5px;
+    border-radius: 10px;
+    background-color: #dcdcdc;
+    cursor: pointer;
+}
+
+.time-filters .active {
+    background-color: #5d755d;
+    color: white;
+}
+
+/* ===== MAIN GRID (IMPORTANT FOR YOUR DESIGN) ===== */
+.main-content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Middle section layout */
+.saving-progress,
+.recent-transactions {
+    margin-top: 20px;
+}
+
+/* Create 2 column layout */
+.saving-progress {
+    flex: 2;
+    /*width: 60%;*/
+    background-color: #dcdcdc;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+
+
+.saving-progress h2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+.recent-transactions {
+    flex: 1;
+    /*width: 35%;*/
+}
+
+/* Put them side by side */
+.main-content > .saving-progress,
+.main-content > .recent-transactions {
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Graph box */
+.graph-placeholder {
+    text-align: center;
+    height: 200px;
+    background-color: #bfbfbf;
+    border-radius: 10px;
+    margin-top: 15px;
+   /* display: flex;
+    align-items: center;
+    justify-content: center;*/
+}
+
+/* Transactions */
+.recent-transactions h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.transaction {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /*justify-content: space-between;*/
+    margin-bottom: 15px;
+}
+
+.circle {
+    width: 25px;
+    height: 25px;
+    background-color: #6f8f6f;
+    border-radius: 50%;
+}
+
+/* Bottom Progress Bar */
+.progress-bar {
+    margin-top: 20px;
+    width: 66%;
+    background-color: #dcdcdc;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.progress-fill {
+    height: 20px;
+    width: 50%;
+    background-color: green;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.progress-bar span {
+    display: flex;
+    justify-content: space-between;
+}
