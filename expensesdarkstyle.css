@@ -7,7 +7,8 @@
 }
 
 body {
-    background-color: #e5e5e5;
+    background-color: #121212;
+    color: #f1f1f1;
 }
 
 /* Layout */
@@ -17,19 +18,19 @@ body {
 }
 
 h3{
-    color: grey;
+    color: lightgray;
     font-size: 16px;
     font-weight: lighter;
     text-align: margin-left;
-    margin-bottom: 20px;
     padding-top: 25px;
+    margin-bottom: 20px;
     padding-left: 20px;
 }
 
 /* Sidebar */
 .sidebar {
     width: 240px;
-    background-color: #dcdcdc;
+    background-color: #404C40;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -50,21 +51,23 @@ h3{
     align-items: center;
     gap: 10px;
     text-decoration: none;
-    color: black;
+    color: white;
     padding: 10px;
     border-radius: 10px;
     margin: 5px 0;
 }
 
 .menu a:hover {
-    background-color: #c5c5c5;
-}
+    background-color: #3A5A40;   /*///////*/
+}  
 
 /*.settings {
     display: flex;
     align-items: center;
     gap: 10px;
-}*/
+}
+*/
+
 
 .logout-container {
     margin-top: auto; /* pushes it to bottom of sidebar */
@@ -76,8 +79,8 @@ h3{
     padding: 12px;
     border: none;
     border-radius: 10px;
-    background-color: #88A288; 
-    color: solid black;
+    background-color: #072207; /* dark green */
+    color: #f1f1f1;
     font-size: 16px;
     cursor: pointer;
     transition: 0.3s ease;
@@ -86,21 +89,24 @@ h3{
 /* Hover effect */
 .logout-btn:hover {
     background-color: #404C40;
-    color: white;
     box-shadow: 0 0 5px #ff5c5c,
                 0 0 5px #ff5c5c,
                 0 0 10px #ff5c5c;
     transform: scale(1.03);
 }
 
-
 /* Icons */
 .icon {
     width: 24px;
     height: 24px;
-    filter: brightness(0);
+    filter: brightness(0) invert(1);  
 }
 
+
+/* Keep specific icons black */
+.noti img, .user-icon img, .search img {
+    filter: none; /* keeps original color */
+}
 
 
 .menu a img[src*="solar_wallet-linear"]{
@@ -132,7 +138,7 @@ h3{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #dcdcdc;
+    background-color: #404C40;
     padding: 10px 20px;
     border-radius: 15px;
 }
@@ -211,7 +217,7 @@ h1 {
 
 .time-filters{
     margin-left: auto;
-    background-color: #dcdcdc;
+    background-color: #404C40;
     padding: 10px;
     border-radius: 10px;
     width: 500px;
@@ -235,7 +241,7 @@ h1 {
     transition: 0.5s ease;
     box-shadow: 0 0 10px #7cff7c,
                 0 0 10px #7cff7c,
-                0 0 20px #7cff7c;
+                0 0 10px #7cff7c;
 }
 
 
@@ -243,9 +249,10 @@ h1 {
 
 .expense-table {
     flex: 2;
-    background-color: #dcdcdc;
+    background-color: #D9D9D9;
     padding: 20px;
     border-radius: 15px;
+    color: black;
 }
 
 table {
@@ -333,24 +340,6 @@ td {
 .recent-transactions {
     margin-top: 20px;
 }
-
-/* Create 2 column layout */
-.saving-progress {
-    flex: 2;
-    /*width: 60%;*/
-    background-color: #dcdcdc;
-    padding: 20px;
-    border-radius: 15px;
-}
-
-
-
-.saving-progress h2 {
-    display: flex;
-    justify-content: space-between;
-}
-
-
 
 
 

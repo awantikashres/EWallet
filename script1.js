@@ -64,7 +64,7 @@ addTransaction('Taxi', 'NRP 400');
 
 
 // Practice Only (Automatically increase the saving process)
-let currentProgress = 50;
+// let currentProgress = 50;
 // setInterval(() => {
 //     if(currentProgress < 100){
 //         currentProgress += 2; // increase by 1% every second
@@ -72,20 +72,32 @@ let currentProgress = 50;
 //     }
 // }, 1000);
 
-const interval = setInterval(() => {
-    if(currentProgress < 100){
-        currentProgress += 5; // increase by 2% every second
-        updateProgress(currentProgress);
-    } else {
-        // Stop the interval when reaching 100%
-        clearInterval(interval);
+// const interval = setInterval(() => {
+//     if(currentProgress < 100){
+//         currentProgress += 5; // increase by 2% every second
+//         updateProgress(currentProgress);
+//     } else {
+//         // Stop the interval when reaching 100%
+//         clearInterval(interval);
 
-        // Show message when 100% is reached
-        // alert('🎉 Congratulations! Your savings are complete!');
-        // OR display inside page instead of alert:
-        const message = document.createElement('div');
-        message.textContent = "🎉 Congratulations! Your savings are complete!";
-        message.style.color = "green";
-        document.querySelector('.main-content').appendChild(message);
-    }
-}, 1000);
+//         // Show message when 100% is reached
+//         // alert('🎉 Congratulations! Your savings are complete!');
+//         // OR display inside page instead of alert:
+//         const message = document.createElement('div');
+//         message.textContent = "🎉 Congratulations! Your savings are complete!";
+//         message.style.color = "green";
+//         document.querySelector('.main-content').appendChild(message);
+//     }
+// }, 1000);
+
+
+function logoutUser() {
+    let confirmAction = confirm("Are you sure you want to logout?");
+    
+    if (confirmAction) {
+        // user clicked OK → logout
+        window.location.href = "loginDark.html";
+    } 
+    // if Cancel → do nothing
+  
+}

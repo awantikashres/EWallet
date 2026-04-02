@@ -1,0 +1,164 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body background */
+body {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+/* Top Header */
+.header {
+    width: 100%;
+    height: 80px;
+    background-color: #404C40;
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    gap: 10px;  /*for the space between the icon and the text*/
+}
+
+.header-icon{
+    width: 60px;
+    height: 60px;
+}
+
+/* Center container */
+.login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: calc(100vh - 80px);*/
+    height: 90vh;
+}
+
+/*Wallet icon*/
+.wallet-icon{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+/* Login card */
+.login-container {
+    background-color: #404C40;
+    padding: 80px 60px;
+    width: 600px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+}
+
+/* Title */
+.login-container h2 {
+    margin-bottom: 30px;
+}
+
+/* Labels */
+.login-container label {
+    display: block;
+    text-align: left;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Inputs */
+.login-container input {
+    width: 100%;
+    padding: 14px 14px 14px 45px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.3s ease;
+    background-color: #2a2a2a;
+    color: #121212;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/*Hover around the textfiled to makew it look eyechatching*/
+.login-container input:hover {
+    border: 1px solid deepskyblue; 
+    box-shadow: 0 0 5px deepskyblue,
+                0 0 5px deepskyblue;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+/*Input Wrapper*/
+.input-wrapper{
+    position: relative;  /*this positions the icon inside*/
+    margin-top: 10px;
+}
+
+/* Input icon */
+.input-wrapper .input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    opacity: 0.7;
+}
+
+/* Add padding-left to input so text doesn't overlap icon */
+.input-wrapper input {
+    width: 100%;
+    padding: 16px 16px 16px 45px; /* left padding for the icon */
+    margin-top: 5px;
+    border-radius: 8px;
+    border: none;
+    background-color: #dbe3e7;
+    font-size: 16px;
+}
+
+/* Forgot password */
+.forgot {
+    text-align: left;
+    margin-top: 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* Button */
+.login-container button {
+    margin-top: 30px;
+    font-size: 18px;
+    width: 60%;
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    background-color: #072207;
+    color: #f1f1f1;
+    cursor: pointer;
+}
+
+/*Button hover*/
+.login-container button:hover{
+     box-shadow: 0 0 5px #7cff7c,
+                0 0 5px #7cff7c,
+                0 0 10px #7cff7c;
+    transform: scale(1.02);
+    transition: 0.3s ease;
+}
+
+
+
+
+.forgot:hover {
+    color: deepskyblue; 
+    transition: 0.2s ease;
+}
+
+
