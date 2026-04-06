@@ -1,0 +1,346 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #f1f1f1;
+}
+
+/* MAIN LAYOUT */
+.container {
+    display: flex;
+    height: 100vh;
+    padding: 10px;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 240px;
+    background-color: #404C40;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+/* LOGO */
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    color: #f1f1f1;
+}
+
+.icon1 {
+    width: 24px;
+    height: 24px;
+}
+
+/* MENU */
+.menu {
+    margin-bottom: 100px;
+}
+
+/* Sidebar icons forced to white */
+.sidebar .menu .icon,
+.sidebar .logo .icon1 {
+    filter: brightness(0) invert(1); /* makes icons white */
+}
+
+
+h2 {
+    color: lightgrey;
+    font-size: 16px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    padding-top: 25px;
+    padding-left: 20px;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+.menu a:hover {
+    background-color: #3A5A40;
+}
+
+/* HEADINGS */
+h3 {
+    color: black;
+    font-weight: lighter;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+
+/* LOGOUT BUTTON */
+.logout-container {
+    margin-top: auto;
+}
+
+.logout-btn {
+    width: 90%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #072207; 
+    color: #f1f1f1;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #404C40;
+    box-shadow: 0 0 5px #ff5c5c,
+                0 0 10px #ff5c5c;
+    transform: scale(1.03);
+}
+
+/* MAIN AREA */
+.main {
+    flex: 1;
+    margin-left: 10px;
+    background-color: #404C40;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    color: #f1f1f1;
+}
+
+/* TOPBAR */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #404C40;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.topbar input {
+    width: 300px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+/* TOP RIGHT ICONS */
+.top-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* ICON CIRCLES */
+.icon-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #eef1ee;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.icon-circle img {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-circle:hover {
+    box-shadow: 0 0 8px #8cff8c,
+                0 0 15px #8cff8c;
+    transform: scale(1.05);
+}
+
+/* SWITCH */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 22px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #cfcfcf;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked + .slider {
+    background-color: #8aa58a;
+}
+
+input:checked + .slider:before {
+    transform: translateX(22px);
+}
+
+/* USER INFO */
+.user-info {
+    text-align: right;
+}
+
+.user-info p {
+    font-size: 14px;
+    color: white;   
+}
+
+.user-info span {
+    font-size: 12px;
+    color: lightgrey;   
+}
+
+/* CONTENT GRID */
+.content {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 350px 340px;
+    gap: 20px;
+}
+
+/* CARDS */
+.card {
+    background-color: #5d755d;
+    border-radius: 15px;
+    padding: 20px;
+    min-height: 300px;
+    color: #f1f1f1;
+}
+
+.card.profile,
+.card.preferences,
+.card.notifications {
+    background-color: #ffffff;
+    color: #121212;
+    padding: 30px 20px;
+}
+
+.card.profile h3{
+    margin: 15px 0 15px;
+    font-weight: bold;
+}
+
+.card.profile p{
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Card headers (shared) */
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.card-header h3 {
+    color: #121212;
+    margin: 0;
+}
+
+/* Icon circles for preferences + notifications */
+.card.preferences .icon,
+.card.notifications .icon {
+    width: 40px;
+    height: 40px;
+    background-color: #404C40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.card.preferences .icon img,
+.card.notifications .icon img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Profile avatar */
+.avatar {
+    width: 100px;
+    height: 100px;
+    background: #404C40;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Preferences boxes */
+.language-box, .mode-box {
+    display: flex;
+    align-items: center;
+    background-color: #eef1ee;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 8px 0 15px;
+    color: #121212;
+    position: relative;
+}
+
+.language-box span {
+    font-size: 14px;
+}
+
+.language-box:hover, .mode-box:hover {
+    background-color: #d6d6d6;
+}
+
+.language-box .global-icon, .mode-box .arrow {
+    font-size: 16px;
+    color: gray;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Notifications items */
+.card.notifications p {
+    padding: 12px 0;
+    border-bottom: 1px solid #aaa;
+}

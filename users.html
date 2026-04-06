@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>View Users</title>
+  <link rel="stylesheet" href="style2.css"> 
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo">
+      <img src="Icons used/Icons used/wallet.png" alt="Wallet Icon" class="icon1"> EWallet
+    </div>
+
+    <nav class="menu">
+      <h2>Menu</h2>
+      <a href="dashboard.html"><img src="Icons used/Icons used/dashboard.png" class="icon"> Dashboard</a>
+      <a href="expenses.html"><img src="Icons used/Icons used/expenses.png" class="icon"> Expenses</a>
+      <a href="wallet.html"><img src="Icons used/Icons used/solar_wallet-linear.png" class="icon"> My Wallet</a>
+      <a href="budget.html"><img src="Icons used/Icons used/budget icon.png" class="icon"> Budget</a>
+    </nav>
+
+    <div class="logout-container">
+      <button class="logout-btn" onclick="logoutUser()">Log Out</button>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <div class="topbar">
+      <input type="text" placeholder="Search">
+      <div class="top-icons">
+        <div class="icon-circle"><img src="Icons used/Icons used/notificationbell.png"></div>
+        <div class="icon-circle"><img src="Icons used/Icons used/userprofile.png"></div>
+        <div class="user-info">
+          <p>Username</p>
+          <span>email@xyz.com</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Users Table -->
+    <div class="content">
+      <div class="card users-card">
+        <h3>View Users</h3>
+        <table class="users-table">
+          <thead>
+            <tr>
+              <th>User name</th>
+              <th>Email</th>
+              <th>Password</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Doe</td>
+              <td>john@example.com</td>
+              <td>********</td>
+            </tr>
+            <tr>
+              <td>Jane Smith</td>
+              <td>jane@example.com</td>
+              <td>********</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function logoutUser() {
+  let confirmAction = confirm("Are you sure you want to logout?");
+  if (confirmAction) {
+    window.location.href = "login.html";
+  }
+}
+</script>
+
+</body>
+</html>

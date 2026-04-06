@@ -21,14 +21,3 @@ function loginUser() {
 
     return false; // prevent form reload
 }
-
-function logoutUser() {
-    // let confirmAction = confirm("Are you sure you want to logout?");
-    
-    // if (confirmAction) {
-    //     // user clicked OK → logout
-    //     window.location.href = "login.html";
-    // } 
-    // if Cancel → do nothing
-    alert("Button Clicked!");
-}

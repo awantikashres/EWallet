@@ -112,10 +112,16 @@ body {
 
 /* Forgot password */
 .forgot {
+    display: block;
     text-align: left;
     margin-top: 10px;
     font-size: 12px;
     cursor: pointer;
+}
+
+.forgot:hover {
+    color: darkblue; 
+    transition: 0.2s ease;
 }
 
 /* Button */
@@ -132,7 +138,10 @@ body {
 
 /*Button hover*/
 .login-container button:hover{
-    background-color: #b0bec5;
+     box-shadow: 0 0 5px #7cff7c,
+                0 0 5px #7cff7c,
+                0 0 10px #7cff7c;
     transform: scale(1.02);
+    background-color: lightcyan;
     transition: 0.3s ease;
 }

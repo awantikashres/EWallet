@@ -246,6 +246,7 @@ h1 {
     background-color: #dcdcdc;
     padding: 20px;
     border-radius: 15px;
+    min-height: 500px;
 }
 
 table {
@@ -388,20 +389,20 @@ td {
     font-size: 18px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     /*justify-content: space-between;*/
-    margin-bottom: 15px;
+    margin-bottom: 35px;
 }
 
 .circle {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
     background-color: #6f8f6f;
     border-radius: 50%;
 }
 
 /* Bottom Progress Bar */
-.progress-bar {
+/*.progress-bar {
     margin-top: 20px;
     width: 66%;
     background-color: #dcdcdc;
@@ -420,4 +421,4 @@ td {
 .progress-bar span {
     display: flex;
     justify-content: space-between;
-}
+}*/

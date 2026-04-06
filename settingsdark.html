@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Settings Page</title>
+	<link rel="stylesheet" href="settingspagedark.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+
+        <div class="logo">
+                <img src="Icons used/Icons used/wallet.png" alt="Wallet Icon" class="icon1"> EWallet
+            </div>
+        
+        <!-- <div class="menu">
+            <img src="Icons used/Icons used/dashboard.png">
+            <p>Dashboard</p>
+            <p>Expenses</p>
+            <p>My wallet</p>
+            <p>Budget</p>
+        </div> -->
+
+         <nav class="menu">
+                <h2>Menu</h2>
+                <a href="#"><img src="Icons used/Icons used/dashboard.png" alt="Dashboard Icon" class="icon"> Dashboard</a>
+                <a href="#"><img src="Icons used/Icons used/expenses.png" alt="Expenses Icon" class="icon"> Expenses</a>
+                <a href="#"><img src="Icons used/Icons used/solar_wallet-linear.png" alt="My Wallet Icon" class="icon"> My Wallet</a>
+                <a href="#"><img src="Icons used/Icons used/budget icon.png" alt="Budget Icon" class="icon"> Budget</a>
+            </nav>
+
+        <div class="logout-container">
+                <button class="logout-btn" onclick="logoutUser()">Log Out</button>
+            </div>
+    </div>
+
+
+    <!-- Main Content -->
+    <div class="main">
+
+        <!-- Top bar -->
+        <!-- <div class="topbar">
+            <input type="text" placeholder="Search">
+        </div> -->
+
+
+        <div class="topbar">
+        	<input type="text" placeholder="Search">
+
+		    <div class="top-icons">
+
+                <label class="switch">
+                  <input type="checkbox" id="topbar-switch" onclick="toggleMode()">
+                  <span class="slider"></span>
+                </label>
+
+
+
+                 <div class="icon-circle">
+                        <img src="Icons used/Icons used/notificationbell.png">
+                    </div>
+
+                    <div class="icon-circle">
+                        <img src="Icons used/Icons used/userprofile.png">
+                    </div>
+
+                   <!--  <div class="user-info">
+                        <p>Username</p>
+                        <span>email@xyz.com</span>
+                    </div> -->
+        
+		        <!-- <img src="Icons used/Icons used/notificationbell.png">
+
+		        <img src="Icons used/Icons used/userprofile.png"> -->
+
+
+
+                <!-- <label class="switch">
+                  <input type="checkbox" onclick="toggleMode()">
+                  <span class="slider"></span>
+                </label> -->
+
+
+
+		    <div class="user-info">
+		        <p>Username</p>
+		        <span>email@xyz.com</span>
+		    </div>
+			</div>
+		</div>
+
+
+
+
+        <!-- Cards -->
+        <div class="content">
+
+            <!-- Profile -->
+            <div class="card profile">
+                <div class="avatar"></div>
+                <h3>Username</h3>
+                <p>email@yz.com</p>
+
+                <!-- Redirect button -->
+                <p><a href="users.html">View Users</a></p>
+
+                <p>Change Password</p>
+            </div>
+
+            <!-- Preferences -->
+            <div class="card preferences">
+                <div class="card-header">
+                    <img src="Icons used/Icons used/preferences.png" class="icon">
+                    <h3>Preferences</h3>
+                </div>
+
+                    <label>Language</label>
+                    <!-- <div class="select-box">
+                        <img src="Icons used/Icons used/global.png" class="global-icon">
+                        <select>
+                            <option>English (US)</option>
+                        </select>
+                    </div> -->
+
+
+                    <div class="language-box" onclick="changeLanguage()">
+                        <img src="Icons used/Icons used/global.png" class="global-icon">
+                        <span>English (US)</span>
+                    </div>
+
+                    <label>Change Mode</label>
+                    <div class="mode-box" onclick="toggleModeBox()">
+                        <span id="current-mode">Light Mode</span>
+                        <span class="arrow">▼</span>
+                    </div>
+                    </div>
+
+            <!-- Notifications -->
+            <div class="card notifications">
+                <div class="card-header">
+                    <div class="icon">
+                    <img src="Icons used/Icons used/notificationbell.png">
+                    </div>
+                    <h3>Notifications</h3>
+                </div>
+
+                <p>Email Notifications</p>
+                <p>Push Notifications</p>
+                <p>Expense Alerts</p>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+// function goToUsers() {
+//     window.location.href = "users.html";
+// }
+
+// function toggleMode() {
+//     document.body.classList.toggle("dark-mode");
+// }
+
+function changeLanguage() {
+    alert("Sorry! We only have English language at the moment!");
+}
+
+function logoutUser() {
+    let confirmAction = confirm("Are you sure you want to logout?");
+
+    if (confirmAction) {
+        window.location.href = "login.html";
+    }
+}
+
+function toggleModeBox() {
+    // Check current page
+    const currentPage = window.location.pathname.split("/").pop();
+
+    if (currentPage === "settings.html") {
+        // Switch to dark mode page
+        window.location.href = "settingsdark.html";
+    } else if (currentPage === "settingsdark.html") {
+        // Switch back to light mode page
+        window.location.href = "settings.html";
+    }
+}
+
+
+function toggleTopbarMode() {
+    // Check current page
+    const currentPage = window.location.pathname.split("/").pop();
+
+    if (currentPage === "settings.html") {
+        // Switch to dark mode page
+        window.location.href = "settingsdark.html";
+    } else if (currentPage === "settingsdark.html") {
+        // Switch back to light mode page
+        window.location.href = "settings.html";
+    }
+}
+
+
+</script>
+
+
+</body>
+</html>

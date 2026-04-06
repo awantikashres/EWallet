@@ -1,0 +1,481 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/* MAIN LAYOUT */
+.container {
+    display: flex;
+    height: 100vh;
+    padding: 10px;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 240px;
+    background-color: #dcdcdc;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 15px;
+    margin: 10px;
+
+}
+
+/* LOGO */
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+
+.logo-img {
+    width: 15px;
+}
+
+
+
+.icon1 {
+    width: 24px;
+    height: 24px;
+    filter: brightness(0);
+}
+
+
+
+/* MENU */
+.menu {
+    margin-bottom: 100px;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+.menu a:hover {
+    background-color: #c5c5c5;
+}
+
+h2{
+    color: gray;
+    font-size: 16px;
+    font-weight: lighter;
+    text-align: margin-left;
+    margin-bottom: 20px;
+    padding-top: 25px;
+    padding-left: 20px;
+}
+
+/* LOGOUT BUTTON */
+/*.logout-btn {
+    background: #8aa58a;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+    background: #6f8c6f;
+    color: white;
+}*/
+
+.logout-container {
+    margin-top: auto; /* pushes it to bottom of sidebar */
+}
+
+.logout-btn {
+    width: 90%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background-color: #88A288; 
+    color: solid black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Hover effect */
+.logout-btn:hover {
+    background-color: #404C40;
+    color: white;
+    box-shadow: 0 0 5px #ff5c5c,
+                0 0 5px #ff5c5c,
+                0 0 10px #ff5c5c;
+    transform: scale(1.03);
+}
+
+
+
+
+/* MAIN AREA */
+.main {
+    flex: 1;
+    margin-left: 10px;
+    background: #dcdcdc;
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+}
+
+/* TOPBAR */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* SEARCH */
+.topbar input {
+    width: 300px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+/* TOP RIGHT */
+.top-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-direction: row;
+}
+
+/* ICONS */
+/*.top-icons img {
+    width: 40px;
+    height: 40px;
+    background-color: #eef1ee;
+    border-radius: 50%;
+    cursor: pointer;          
+}
+*/
+
+
+
+.icon-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #eef1ee;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.icon-circle img {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+/* SWITCH */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 45px;
+  height: 22px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #cfcfcf;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+input:checked + .slider {
+  background-color: #8aa58a;
+}
+
+input:checked + .slider:before {
+  transform: translateX(22px);
+}
+
+
+
+
+
+
+
+/* USER INFO */
+.user-info {
+    text-align: right;
+}
+
+.user-info p {
+    font-size: 14px;
+}
+
+.user-info span {
+    font-size: 12px;
+    color: gray;
+}
+
+/* CONTENT GRID */
+.content {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 350px 340px;
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background: #efefef;
+    border-radius: 15px;
+    padding: 20px;
+    position: relative;
+    min-height: 300px;
+}
+
+.card h3{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.card p{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* PROFILE */
+.avatar {
+    width: 100px;
+    height: 100px;
+    background: #8aa58a;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.card-header img {
+    width: 30px;
+}
+
+
+
+
+/* BUTTON */
+.card button {
+    margin-top: 15px;
+    /*padding: 8px;*/
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+   /* background: #8aa58a;*/
+    /*border-radius: 8px;*/
+    cursor: pointer;
+}
+
+/* PREFERENCES ICON */
+.preferences .icon {
+    width: 40px;
+    /*position: absolute;*/
+    display: flex;
+    top: 20px;
+    right: 20px;
+    background-color: #404C40;
+    padding: 2px;
+    border-radius: 6px;
+}
+
+
+.card.preferences .card-header h3, 
+.card.notifications .card-header h3{
+    font-size: 18px;
+}
+
+/* Preferences labels */
+.card.preferences label {
+    font-size: 16px;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Language box */
+/*.language-box span {
+    font-size: 16px;  /* bigger text 
+}*/
+
+/* Notification items */
+.card.notifications p {
+    font-size: 16px;
+    padding: 12px 0;  /* more space between lines */
+}
+
+.language-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #e5e5e5;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 8px 0 15px;
+
+
+    position: relative;
+}
+
+.language-box span {
+    font-size: 14px;
+}
+
+.language-box:hover {
+    background: #d6d6d6;
+}
+
+/* keep your icon */
+.global-icon {
+    width: 18px;
+}
+
+
+
+
+
+/*.select-box {
+    position: relative;
+}*/
+
+.mode-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* text left, arrow right */
+    background: #e5e5e5;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 8px 0 15px;
+    font-size: 16px;
+}
+
+.mode-box .arrow {
+    font-size: 16px;
+    color: gray;
+}
+
+.global-icon {
+    position: absolute;
+    right: 10px;
+    padding-bottom: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    border-radius: 50%;
+}
+
+.select-box select {
+    width: 100%;
+    padding: 8px 8px 8px 35px; /* space for icon */
+    border-radius: 8px;
+    border: none;
+}
+
+
+
+.notifications{
+    position: relative;
+}
+
+.notifications .icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #404C40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.notifications img{
+    background-color: #404C40;
+    border-radius: 6px;
+    width: 40px;
+    height: 40px;
+}
+
+.notifications .icon img {
+    width: 20px; /* scale the icon inside the circle */
+    height: 20px;
+}
+
+
+
+
+/* NOTIFICATION ICON */
+/*.notifications img {
+    width: 40px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 20px;
+    justify-content: center;
+    background-color: #404C40;
+    border-radius: 6px;
+    right: 20px;
+}
+*/
+/* NOTIFICATION TEXT */
+.notifications p {
+    padding: 10px 0;
+    border-bottom: 1px solid #aaa;
+}
